@@ -1,0 +1,37 @@
+:root {
+  --yellow: #FFD700;
+  --white: #FFFFFF;
+  --dark: #1a1a1a;
+}
+
+.footer {
+  background-color: var(--dark);
+  color: var(--white);
+  padding: 2rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.footer-content {
+  max-width: 600px;
+}
+
+.footer-text {
+  font-size: 1rem;
+  color: var(--yellow);
+  margin-bottom: 0.3rem;
+}
+
+.footer-location {
+  font-size: 0.95rem;
+  color: var(--white);
+}
+
+.footer-thanks {
+  color: var(--yellow);
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
