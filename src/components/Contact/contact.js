@@ -11,6 +11,16 @@ const Contact = () => {
     const form = useRef();
     const sendEmail = (e) => {
     e.preventDefault();
+// This is the new code
+     const formData = new FormData(form.current);
+    const name = formData.get("name").trim();
+    const email = formData.get("email").trim();
+    const message = formData.get("message").trim();
+
+     if (!name || !email || !message) {
+      alert("Please fill in all fields before submitting.");
+      return; // stop the function if validation fails
+    }
 
     emailjs
       .sendForm('service_zg9lx9r', 'template_is55oup', form.current, {
@@ -41,8 +51,8 @@ I am eager to apply technical knowledge and administrative experience to contrib
                 <h1 className="contactPageTitle"> Contact Me </h1>
                 <span className="contactDesc">Please fill the form below to discuss any work opportunities. </span>
                 <form className="contactForm" ref={form} onSubmit={sendEmail}>
-                    <input type="text" className="name" placeholder="Your Name" name='name'/>
-                    <input type="email" className="email" placeholder="Your Email" name='email'/>
+                    <input type="text" className="name" placeholder="Your Name" name='name' required/>
+                    <input type="email" className="email" placeholder="Your Email" name='email' required/>
                     <textarea className="msg" name="message" rows="5" placeholder="Your Message"></textarea>
                     <button type='submit' value='Send' className="submitBtn">Submit</button>
                     <div className="links">
