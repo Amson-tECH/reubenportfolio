@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/reubenportfolio/static/css/main.561ffcc5.css",
-    "main.js": "/reubenportfolio/static/js/main.09f417c4.js",
+    "main.css": "/reubenportfolio/static/css/main.df36eee8.css",
+    "main.js": "/reubenportfolio/static/js/main.c89b9f8d.js",
     "static/media/image.png": "/reubenportfolio/static/media/image.955501a8679f59950086.png",
     "static/media/portfolio-6.png": "/reubenportfolio/static/media/portfolio-6.4a10fac7d271e87859e9.png",
     "static/media/portfolio-2.png": "/reubenportfolio/static/media/portfolio-2.33d06b368b4e6395030e.png",
@@ -12,11 +12,11 @@
     "static/media/ui-design.png": "/reubenportfolio/static/media/ui-design.c4acd455fc2040eddcc8.png",
     "static/media/instagram.png": "/reubenportfolio/static/media/instagram.0bcd1dcb7d853c327af7.png",
     "index.html": "/reubenportfolio/index.html",
-    "main.561ffcc5.css.map": "/reubenportfolio/static/css/main.561ffcc5.css.map",
-    "main.09f417c4.js.map": "/reubenportfolio/static/js/main.09f417c4.js.map"
+    "main.df36eee8.css.map": "/reubenportfolio/static/css/main.df36eee8.css.map",
+    "main.c89b9f8d.js.map": "/reubenportfolio/static/js/main.c89b9f8d.js.map"
   },
   "entrypoints": [
-    "static/css/main.561ffcc5.css",
-    "static/js/main.09f417c4.js"
+    "static/css/main.df36eee8.css",
+    "static/js/main.c89b9f8d.js"
   ]
 }
