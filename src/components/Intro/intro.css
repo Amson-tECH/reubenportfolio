@@ -35,7 +35,7 @@
                 .round-image {
                     width: 2500px; /* Adjust size as needed */
                     height: 2500px;
-                    border-radius: 50%; /* Makes it a perfect circle */
+                    border-radius: 60%; /* Makes it a perfect circle */
                     object-fit: cover; /* Ensures the image covers the area without stretching */
                     border: 5px solid yellow; /* Yellow border */
                     /* Remove position: absolute and z-index: -1; as flexbox will handle positioning */
