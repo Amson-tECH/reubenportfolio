@@ -5,7 +5,7 @@ import Works from "./components/Works/works";
 import Contact  from "./components/Contact/contact";
 import Footer from "./components/Footer/footer";
 // The new code i added
-import bg from '../src/image.png';
+//import bg from '../src/image.png';
 // The new code i added 
 import './App.css';
 
@@ -15,14 +15,14 @@ function App() {
     <div className="App">
       <Navbar/>
       <Intro/>
+    {/*  <img src={bg} alt="Animated" className="round-image" /> */} 
       <Skills />
       <Works />
       <Contact />
       <Footer />
       
       {/*The new code i added */}
-      <img src={bg} alt="Animated" className="bg" />
-    </div> 
+    </div>
   );
 }
 

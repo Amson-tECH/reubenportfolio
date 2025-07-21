@@ -1,4 +1,4 @@
-  /* .bg {
+  .bg {
   position: absolute;
   top: 0;
   left: 0;
@@ -9,9 +9,17 @@
   opacity: 0;
   animation: fadeZoom 2s ease-in-out forwards;
   
-} */
+} 
 
-.bg{
+.round-image {
+  width: 200px;         /* adjust size as needed */
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;     /* ensures it doesn’t look stretched */
+  border: 3px solid #facc15; /* optional: yellow border */
+}
+
+/*.bg{
   width: 120;
     height: 120;
     border-radius: 60;
@@ -22,7 +30,7 @@
   top: 0;
   position: absolute;
 
-} 
+} */
 
 @keyframes fadeZoom {
   0% {

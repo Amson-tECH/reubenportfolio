@@ -1,107 +1,189 @@
-#intro {
-    height: calc(100vh - 4rem);
-    width: 100vw;
-    max-width: 75rem;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-    
-
-}
-/*.bg{
-  width: 120;
-    height: 120;
-    border-radius: 60;
-    margin-bottom: 15;
-    border-width: 3;
-    border-color: "#facc15"; 
-} */
-/*
-.bg{
-    .animated-pic {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  object-fit: contain;
-  z-index: -1;
-  opacity: 0;
-  animation: fadeZoom 2s ease-in-out forwards;
-}
-
-@keyframes fadeZoom {
-  0% {
-    transform: scale(0.95);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-  
-} */
-
-.introContent {
-    height: 100vh;
-    width: 100vw;
-    padding: 2rem;
-    font-size: 3rem;
-    font-weight: 700;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.hello{
-    font-size: 1.75rem;
-    font-weight: 100;
-    color: yellow;
-}
-.introName{
-   color: yellow;
-}
-.introPara{
-    font-size: medium;
-    font-weight: 300;
-    letter-spacing: 1px;
-    
-    
-}
-.introHead {
-    color: yellow;
-}
-.btn{
-    background: white;
-    color: black;
-    margin: 1rem 0;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 2rem;
-}
-.btnImg {
-    object-fit: cover;
-    margin: 0 0.25rem;
-    height: 1rem;
-}
-@media screen and (max-width:840px) {
-    .bg{
-        right: -10vw;
-    }
-    .introContent{
-        font-size: 10vw;
-    }
-    .hello {
-        font-size: 4.5vw;
-    }
-    
-}
-@media screen and (max-width:480px) {
-    .bg{
-        right: -20vw;
-    }
-    
-}
 
 
+                #intro {
+                    /* Full viewport height minus header if any, centered horizontally */
+                    height: calc(100vh - 4rem); /* Adjust 4rem if your header height is different */
+                    width: 100vw;
+                    max-width: 75rem; /* Max width for the content area */
+                    margin: 0 auto; /* Center the section horizontally */
+                    overflow: hidden; /* Hide any overflowing content */
+                    position: relative; /* Needed for positioning children if absolute, but not for this flex setup */
+                    display: flex; /* Use flexbox to center content vertically within #intro */
+                    align-items: center; /* Center content vertically */
+                    justify-content: center; /* Center content horizontally */
+                }
+
+                /* Container for the text and image, using flexbox for layout */
+                .introContentContainer {
+                    display: flex;
+                    flex-direction: column; /* Default to column layout for mobile */
+                    align-items: center; /* Center items horizontally in column layout */
+                    justify-content: center; /* Center items vertically in column layout */
+                    padding: 2rem; /* Padding around the content */
+                    width: 100%; /* Take full width of its parent */
+                    max-width: 900px; /* Limit the width of the content container */
+                    margin: 0 auto; /* Center the container */
+                    text-align: center; /* Default text alignment for mobile */
+                }
+
+                /* Wrapper for all the text elements and the button */
+                .introTextContent {
+                    margin-bottom: 2rem; /* Space below text content on mobile */
+                }
+
+                /* Profile image styling */
+                .round-image {
+                    width: 250px; /* Adjust size as needed */
+                    height: 250px;
+                    border-radius: 50%; /* Makes it a perfect circle */
+                    object-fit: cover; /* Ensures the image covers the area without stretching */
+                    border: 3px solid #facc15; /* Yellow border */
+                    /* Remove position: absolute and z-index: -1; as flexbox will handle positioning */
+                    flex-shrink: 0; /* Prevents the image from shrinking */
+                }
+
+                /* Text styles */
+                .hello {
+                    font-size: 1.75rem;
+                    font-weight: 100;
+                    color: yellow;
+                    display: block; /* Ensures it takes its own line */
+                    margin-bottom: 0.5rem; /* Space below "Hello," */
+                }
+
+                .introText {
+                    font-size: 3rem; /* Base font size for intro text */
+                    font-weight: 700;
+                    line-height: 1.2; /* Adjust line height for better readability */
+                    display: block; /* Ensures it takes its own line */
+                }
+
+                .introName {
+                    color: yellow;
+                }
+
+                .introHead {
+                    color: yellow;
+                    display: block; /* Ensures it takes its own line */
+                }
+
+                .introPara {
+                    font-size: 1rem; /* Adjusted to medium */
+                    font-weight: 300;
+                    letter-spacing: 1px;
+                    margin-top: 1rem; /* Space above paragraph */
+                    margin-bottom: 1.5rem; /* Space below paragraph */
+                }
+
+                /* Button styling */
+                .btn {
+                    background: white;
+                    color: black;
+                    margin: 1rem 0;
+                    padding: 0.75rem 1.5rem;
+                    border: none;
+                    border-radius: 2rem;
+                    cursor: pointer; /* Indicate it's clickable */
+                    display: inline-flex; /* Allows img and text to be on same line */
+                    align-items: center; /* Vertically align img and text */
+                    justify-content: center;
+                    font-size: 1rem; /* Ensure button text is readable */
+                    font-weight: 500;
+                    transition: background-color 0.3s ease; /* Smooth hover effect */
+                }
+
+                .btn:hover {
+                    background-color: #e0e0e0; /* Slightly darker on hover */
+                }
+
+                .btnImg {
+                    object-fit: cover;
+                    margin-right: 0.5rem; /* Space between image and text in button */
+                    height: 1rem;
+                    width: 1rem; /* Ensure consistent size for button icon */
+                }
+
+                /* Media queries for responsiveness */
+
+                /* For screens wider than 768px (e.g., tablets and desktops) */
+                @media screen and (min-width: 840px) {
+                    .introContentContainer {
+                        flex-direction: row; /* Change to row layout */
+                        text-align: left; /* Align text to the left */
+                        justify-content: space-around; /* Distribute space between text and image */
+                        align-items: center; /* Vertically align items in the row */
+                    }
+
+                    .introTextContent {
+                        margin-bottom: 0; /* Remove bottom margin when in row layout */
+                        margin-right: 3rem; /* Add space between text and image */
+                        max-width: 50%; /* Limit text content width */
+                    }
+
+                    .round-image {
+                        width: 300px; /* Increase image size for larger screens */
+                        height: 300px;
+                    }
+
+                    .introText {
+                        font-size: 4rem; /* Larger font size for desktop */
+                    }
+
+                    .hello {
+                        font-size: 2.25rem; /* Larger font for hello */
+                    }
+
+                    .introPara {
+                        font-size: 1.15rem; /* Slightly larger paragraph text */
+                    }
+                }
+
+                /* For very large screens (optional, adjust as needed) */
+                @media screen and (min-width: 1200px) {
+                    .introContentContainer {
+                        justify-content: center; /* Center content more on very large screens */
+                        gap: 5rem; /* Larger gap between text and image */
+                    }
+                }
+
+                /* Original mobile specific adjustments (keep for smaller screens) */
+                @media screen and (max-width: 840px) {
+                    /* These styles apply when screen width is 840px or less */
+                    .introContentContainer {
+                        padding: 1rem; /* Reduce padding on smaller screens */
+                    }
+                    .introText {
+                        font-size: 8vw; /* Fluid font size for intro text */
+                    }
+                    .hello {
+                        font-size: 4vw; /* Fluid font size for hello */
+                    }
+                    .introPara {
+                        font-size: 3.5vw; /* Fluid font size for paragraph */
+                    }
+                    .round-image {
+                        width: 200px; /* Keep image smaller on these screens */
+                        height: 200px;
+                    }
+                }
+
+                @media screen and (max-width: 480px) {
+                    /* Further adjustments for very small mobile screens */
+                    .introContentContainer {
+                        padding: 0.5rem;
+                    }
+                    .introText {
+                        font-size: 9vw;
+                    }
+                    .hello {
+                        font-size: 5vw;
+                    }
+                    .introPara {
+                        font-size: 4vw;
+                    }
+                    .round-image {
+                        width: 180px;
+                        height: 180px;
+                    }
+                }
+                
