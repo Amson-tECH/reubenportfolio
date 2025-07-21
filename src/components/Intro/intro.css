@@ -33,11 +33,11 @@
 
                 /* Profile image styling */
                 .round-image {
-                    width: 250px; /* Adjust size as needed */
-                    height: 250px;
+                    width: 2500px; /* Adjust size as needed */
+                    height: 2500px;
                     border-radius: 50%; /* Makes it a perfect circle */
                     object-fit: cover; /* Ensures the image covers the area without stretching */
-                    border: 3px solid #facc15; /* Yellow border */
+                    border: 5px solid yellow; /* Yellow border */
                     /* Remove position: absolute and z-index: -1; as flexbox will handle positioning */
                     flex-shrink: 0; /* Prevents the image from shrinking */
                 }
@@ -121,8 +121,8 @@
                     }
 
                     .round-image {
-                        width: 300px; /* Increase image size for larger screens */
-                        height: 300px;
+                        width: 350px; /* Increase image size for larger screens */
+                        height: 350px;
                     }
 
                     .introText {
@@ -162,8 +162,8 @@
                         font-size: 3.5vw; /* Fluid font size for paragraph */
                     }
                     .round-image {
-                        width: 200px; /* Keep image smaller on these screens */
-                        height: 200px;
+                        width: 250px; /* Keep image smaller on these screens */
+                        height: 250px;
                     }
                 }
 
