@@ -22,7 +22,7 @@ function App() {
       
       {/*The new code i added */}
       <img src={bg} alt="Animated" className="bg" />
-    </div>
+    </div> 
   );
 }
 

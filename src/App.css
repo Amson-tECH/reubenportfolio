@@ -18,7 +18,11 @@
     margin-bottom: 15;
     border-width: 3;
     border-color: "#facc15"; 
-}
+  left: 0;
+  top: 0;
+  position: absolute;
+
+} 
 
 @keyframes fadeZoom {
   0% {
