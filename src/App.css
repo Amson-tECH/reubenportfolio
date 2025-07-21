@@ -1,4 +1,4 @@
-.bg {
+  /* .bg {
   position: absolute;
   top: 0;
   left: 0;
@@ -9,6 +9,15 @@
   opacity: 0;
   animation: fadeZoom 2s ease-in-out forwards;
   
+} */
+
+.bg{
+  width: 120;
+    height: 120;
+    border-radius: 60;
+    margin-bottom: 15;
+    border-width: 3;
+    border-color: "#facc15"; 
 }
 
 @keyframes fadeZoom {
@@ -18,6 +27,6 @@
   }
   100% {
     transform: scale(1);
-    opacity: 1;
+    opacity: 1;  
   }
 }
