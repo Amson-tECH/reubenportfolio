@@ -12,7 +12,7 @@ const Contact = () => {
     const sendEmail = (e) => {
     e.preventDefault();
 // This is the new code
-     const formData = new FormData(form.current);
+     const formData = new FormData(form.current); 
     const name = formData.get("name").trim();
     const email = formData.get("email").trim();
     const message = formData.get("message").trim();

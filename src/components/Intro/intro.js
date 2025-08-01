@@ -19,8 +19,8 @@ const Intro = () => {
                 <div className="introContentContainer"> {/* New wrapper for flex layout */}
                     <div className="introTextContent"> {/* Wrapper for all text and button */}
                         <span className="hello">Hello,</span>
-                        <span className="introText">I'm <span className="introName">Reuben</span> <br/> <span className="introHead">Website Developer </span> </span>
-                        <p className="introPara">I am a skilled Web Dev with experience in building visually <br /> appealing and user friendly website. </p>
+                        <span className="introText">I'm <span className="introName">Reuben</span> <br/> <span className="introHead"> <div> A Software Developer </div> and Mobile App Builder </span> </span>
+                        <p className="introPara">I create modern, user-focused apps and websites  <br /> that are fast, responsive, and beautifully designed. </p>
 
                         <a href="https://drive.google.com/file/d/1t8PRdyFjlNcYzlhA-Igtp9WdtwZ3x5vX/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                             <button className="btn">

@@ -9,7 +9,7 @@ import Footer from "./components/Footer/footer";
 // The new code i added 
 import './App.css';
 
-
+ 
 function App() {
   return (
     <div className="App">
@@ -18,7 +18,7 @@ function App() {
     {/*  <img src={bg} alt="Animated" className="round-image" /> */} 
       <Skills />
       <Works />
-      <Contact />
+      <Contact /> 
       <Footer />
       
       {/*The new code i added */}
